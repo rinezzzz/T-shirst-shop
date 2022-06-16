@@ -118,15 +118,14 @@ app.get('/productsBySize/:size', (req, res) => {
 });
 
 app.post('/postproduct', (req, res) => {
-    const Postproducts = products.push(req.body)
-    console.log('Post Success')
-    res.json(Postproducts)
+  const Postproducts = products.push(req.body)
+  console.log('Post products Success')
+  res.json(Postproducts)
 })
 
-
-app.post('/postorders', (req, res) => {
+app.post('/postaddress', (req, res) => {
   const Postorders = orders.push(req.body)
-  console.log('Post Success')
+  console.log('Post Address Success')
   res.json(Postorders)
 })
 
